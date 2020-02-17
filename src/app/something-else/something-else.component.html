@@ -1,0 +1,73 @@
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav sidenav-slider " mode="modal">
+    <Div>
+      <h2 class="side-bar-header">Mail</h2>
+      <h4 class="side-bar-sub-header">
+        user@mail.com</h4>
+    </Div>
+
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">all_inbox</mat-icon>
+        <span class="drawer-list-item">Inbox</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">star</mat-icon>
+        <span class="drawer-list-item">Star</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">send</mat-icon>
+        <span class="drawer-list-item">Sent Mail</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">drafts</mat-icon>
+        <span class="drawer-list-item">Drafts</span>
+      </button>
+    </a>
+
+    <h4 class="side-bar-sub-header">Labels</h4>
+
+    <button type="button" class="btn-side-nav-full" (click)="showFiller = !showFiller">
+      <mat-icon aria-hidden="false" class="drawer-list-icon">keyboard_arrow_down</mat-icon>
+      <span class="drawer-list-item">More</span>
+    </button>
+
+    <a *ngIf="showFiller" href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">bookmark</mat-icon>
+        <span class="drawer-list-item">Friends</span>
+      </button>
+    </a>
+    <a *ngIf="showFiller" href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">bookmark</mat-icon>
+        <span class="drawer-list-item">Family</span>
+      </button>
+    </a>
+    <a *ngIf="showFiller" href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">bookmark</mat-icon>
+        <span class="drawer-list-item">Work</span>
+      </button>
+    </a>
+
+  </mat-drawer>
+
+  <nav class="navbar  navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Evetech</a>
+    <div class="example-sidenav-content profile-icon-span" (click)="drawer.toggle()">
+      <span class="user">
+        User
+      </span>
+      <mat-icon class="profile-icon" aria-hidden="false">account_circle</mat-icon>
+    </div>
+  </nav>
+  <app-something-cool></app-something-cool>
+</mat-drawer-container>
