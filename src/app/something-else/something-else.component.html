@@ -2,33 +2,57 @@
 
   <mat-drawer #drawer class="example-sidenav sidenav-slider " mode="modal">
     <Div>
-      <h2 class="side-bar-header">Mail</h2>
+      <h2 class="side-bar-header">Account Name</h2>
       <h4 class="side-bar-sub-header">
-        user@mail.com</h4>
+        www.yoursite.com</h4>
     </Div>
 
     <a href="#">
       <button type="button" class="btn-side-nav-full">
-        <mat-icon aria-hidden="false" class="drawer-list-icon">all_inbox</mat-icon>
-        <span class="drawer-list-item">Inbox</span>
+        <mat-icon aria-hidden="false" class="drawer-list-icon">dashboard</mat-icon>
+        <span class="drawer-list-item">dashboard</span>
       </button>
     </a>
     <a href="#">
       <button type="button" class="btn-side-nav-full">
-        <mat-icon aria-hidden="false" class="drawer-list-icon">star</mat-icon>
-        <span class="drawer-list-item">Star</span>
+        <mat-icon aria-hidden="false" class="drawer-list-icon">attach_money</mat-icon>
+        <span class="drawer-list-item">Sales</span>
       </button>
     </a>
     <a href="#">
       <button type="button" class="btn-side-nav-full">
-        <mat-icon aria-hidden="false" class="drawer-list-icon">send</mat-icon>
-        <span class="drawer-list-item">Sent Mail</span>
+        <mat-icon aria-hidden="false" class="drawer-list-icon">add_box</mat-icon>
+        <span class="drawer-list-item">Products</span>
       </button>
     </a>
     <a href="#">
       <button type="button" class="btn-side-nav-full">
-        <mat-icon aria-hidden="false" class="drawer-list-icon">drafts</mat-icon>
-        <span class="drawer-list-item">Drafts</span>
+        <mat-icon aria-hidden="false" class="drawer-list-icon">emoji_people</mat-icon>
+        <span class="drawer-list-item">Customers</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">add_box</mat-icon>
+        <span class="drawer-list-item">Products</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">add_box</mat-icon>
+        <span class="drawer-list-item">Products</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">add_box</mat-icon>
+        <span class="drawer-list-item">Products</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">bar_chart</mat-icon>
+        <span class="drawer-list-item">Reporting</span>
       </button>
     </a>
 
@@ -59,14 +83,17 @@
     </a>
 
   </mat-drawer>
-
+<!-- Redo Nav so that it actually works... -->
   <nav class="navbar  navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Evetech</a>
+    <a class="navbar-brand" href="#">Account Name</a>
+    <!-- Still need to align right next to dots icon
+    <div class="example-sidenav-content">
+      <mat-icon class="profile-icon-small" aria-hidden="false">arrow_drop_down</mat-icon>
+      <span class="user"> Admin</span>
+    </div>
+    -->
     <div class="example-sidenav-content profile-icon-span" (click)="drawer.toggle()">
-      <span class="user">
-        User
-      </span>
-      <mat-icon class="profile-icon" aria-hidden="false">account_circle</mat-icon>
+      <mat-icon class="profile-icon" aria-hidden="false">more_vert</mat-icon>
     </div>
   </nav>
   <app-something-cool></app-something-cool>
