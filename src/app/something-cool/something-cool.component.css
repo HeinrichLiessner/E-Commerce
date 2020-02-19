@@ -19,6 +19,7 @@
   margin-left: 8px;
 }
 */
+
 .nav-rail{
   float: right;
   width: 70px;
@@ -51,4 +52,9 @@
 }
 .nav-rail-list:hover{
   background-color: #ececec;
+}
+.side-bar-sub-header{
+  font-size: 16px;
+  color: #666666;
+  padding-top: 12px;
 }

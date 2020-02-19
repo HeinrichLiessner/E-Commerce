@@ -1,4 +1,55 @@
+
 <mat-drawer-container class="example-container" autosize>
+
+  <!-- Redo Nav so that it actually works... -->
+
+  <nav class="navbar  navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Account Name</a>
+
+
+
+    <div class="menu-right">
+      <!-- search function in progress
+      <div class="search">
+        <mat-icon class="profile-icon search-icon" aria-hidden="false">search</mat-icon>
+        <input class="search-input" type="text" placeholder="Search">
+      </div>
+      -->
+      <button mat-button [matMenuTriggerFor]="menu">
+        <div class="example-sidenav-content">
+          <mat-icon class="profile-icon-small" aria-hidden="false">arrow_drop_down</mat-icon>
+          <span class="user">User</span>
+          <mat-icon class="profile-icon" aria-hidden="false">person</mat-icon>
+        </div>
+      </button>
+
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>person</mat-icon>
+          <span>My Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>extension</mat-icon>
+          <span>Customizations</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>power_settings_new</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+
+
+      <div class="example-sidenav-content profile-icon-span" (click)="drawer.toggle()">
+        <mat-icon class="profile-icon" aria-hidden="false">more_vert</mat-icon>
+      </div>
+    </div>
+
+  </nav>
 
   <mat-drawer #drawer class="example-sidenav sidenav-slider " mode="modal">
     <Div>
@@ -39,20 +90,20 @@
     </a>
     <a href="#">
       <button type="button" class="btn-side-nav-full">
-        <mat-icon aria-hidden="false" class="drawer-list-icon">add_box</mat-icon>
-        <span class="drawer-list-item">Products</span>
-      </button>
-    </a>
-    <a href="#">
-      <button type="button" class="btn-side-nav-full">
-        <mat-icon aria-hidden="false" class="drawer-list-icon">add_box</mat-icon>
-        <span class="drawer-list-item">Products</span>
+        <mat-icon aria-hidden="false" class="drawer-list-icon">view_compact</mat-icon>
+        <span class="drawer-list-item">Content</span>
       </button>
     </a>
     <a href="#">
       <button type="button" class="btn-side-nav-full">
         <mat-icon aria-hidden="false" class="drawer-list-icon">bar_chart</mat-icon>
         <span class="drawer-list-item">Reporting</span>
+      </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn-side-nav-full">
+        <mat-icon aria-hidden="false" class="drawer-list-icon">settings</mat-icon>
+        <span class="drawer-list-item">Settings</span>
       </button>
     </a>
 
@@ -83,18 +134,6 @@
     </a>
 
   </mat-drawer>
-<!-- Redo Nav so that it actually works... -->
-  <nav class="navbar  navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Account Name</a>
-    <!-- Still need to align right next to dots icon
-    <div class="example-sidenav-content">
-      <mat-icon class="profile-icon-small" aria-hidden="false">arrow_drop_down</mat-icon>
-      <span class="user"> Admin</span>
-    </div>
-    -->
-    <div class="example-sidenav-content profile-icon-span" (click)="drawer.toggle()">
-      <mat-icon class="profile-icon" aria-hidden="false">more_vert</mat-icon>
-    </div>
-  </nav>
+
   <app-something-cool></app-something-cool>
 </mat-drawer-container>

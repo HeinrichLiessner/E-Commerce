@@ -3,6 +3,9 @@
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
+.menu-right{
+  display: inline-flex;
+}
 .example-sidenav-content {
   display: flex;
   height: 100%;
@@ -47,7 +50,8 @@
 .profile-icon-span{
   padding-right: 10px;
   padding-top: 0px;
-  margin-top:-5px;
+  padding-left: 10px;
+  margin-top:5px;
 }
 .navbar{
   padding: 1rem;
@@ -56,6 +60,26 @@
   font-size: 17px;
   padding-top: 5px;
   color: white;
+}
+.right{
+  float: right;
+  right: 0;
+}
+.mat-menu-item{
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #202124;
+}
+.mat-menu-item:hover{
+  color: #666666;
+}
+.matMenu{
+  width: 200px !important;
+  max-width: 250px !important;
+  min-width: 200px !important;
+  overflow: hidden !important;
 }
 .btn-side-nav-full{
   color: deeppink;
@@ -76,6 +100,9 @@
 .link-side-nav-full-span{
   width: 100%;
   padding: 10px 20px;
+}
+.navbar{
+  max-height: 73px;
 }
 .navbar-brand{
   color: white;
@@ -100,4 +127,27 @@
 .drawer-list-item{
   padding-left:20px;
   vertical-align: super;
+}
+.search{
+  background-color: transparent;
+  transition: width 0.5s ;
+  overflow: hidden;
+  height: 95%;
+  margin-top: -10px;
+}
+.search-icon{
+  padding-right: 10px;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+.search-input{
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px #202124 solid;
+  margin-left:15px;
+  display: inline-flex;
+  width: 250px;
+  height: 40px;
+  padding: 0px 15px;
 }
